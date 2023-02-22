@@ -11,6 +11,10 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+            integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
         <title>PHP ToDo List JSON</title>
     </head>
     <body>
@@ -21,10 +25,16 @@
                 <h4>Profilo di Giada</h4>
             </header>
             <main>
+                <h2>My task:</h2>
                 <div class="container">
                     <ul>
                         <li v-for="element in tasksList" :class="(element.done) ? 'done' : ''">
-                            {{element.task}}
+                            <span>
+                                {{element.task}}
+                            </span>
+                            <div class="delete-task">
+                                <i class="fa-solid fa-trash-can"></i>
+                            </div>
                         </li>
                     </ul>
                 </div>
