@@ -11,7 +11,11 @@
         <div id="app">
             <h1>ToDo List</h1>
             <h2>
-                {{tasksList}}
+                <ul>
+                    <li v-for="element in tasksList">
+                        {{element.task}}
+                    </li>
+                </ul>
             </h2>
         </div>
         
