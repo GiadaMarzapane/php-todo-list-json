@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+header{
+    height: 10vh;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    background: lavender;
+    margin-bottom: 1rem;
+}
+
+div.container{
+    width: 50%;
+    margin: auto;
+    border: 1px solid darkslategray;
+    border-radius: 2px;
+    padding: 10px;
+}
+div.container ul li{
+    list-style-type: none;
+    border-bottom: 1px solid lightgray;
+    padding-top: 5px;
+    cursor: pointer;
+}
+.done{
+    text-decoration: line-through;
+}

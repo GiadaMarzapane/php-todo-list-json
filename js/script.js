@@ -14,7 +14,7 @@ createApp({
         axios.get(this.urlApi)
         .then(response => {
             console.log(response.data)
-            this.tasksList = response.data.data
+            this.tasksList = response.data.data;
         })
     }
 }).mount('#app');
