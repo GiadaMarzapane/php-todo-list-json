@@ -12,6 +12,9 @@ createApp({
         }
     },
     methods:{
+        createNewTask(){
+            console.log(this.newTask)
+        }
 
     },
     created(){

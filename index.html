@@ -39,7 +39,7 @@
                     </ul>
                 </div>
                 <div>
-                    <form action="create.php" method="post">
+                    <form action="create.php" method="post" @submit.prevent="createNewTask()">
                         <input type="text" v-model="newTask.task" name="my-task" placeholder="Aggiungi nuova task">
                         <button type="submit">Inserisci</button>
                     </form>
