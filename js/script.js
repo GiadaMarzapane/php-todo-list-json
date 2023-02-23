@@ -3,7 +3,7 @@ createApp({
     data(){
         return{
             message: 'My todolist app!',
-            urlApi: '/php-todo-list-json/api.php',
+            urlApi: './api.php',
             tasksList: []
         }
     },
