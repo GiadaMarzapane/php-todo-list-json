@@ -57,3 +57,25 @@ div.container ul li span{
 .done{
     text-decoration: line-through;
 }
+
+form{
+    text-align: center;
+    margin-top: 10px;
+    width: 50%;
+    margin: 20px auto 0;
+}
+
+form > input{
+    padding: 5px;
+    width: 80%;
+}
+form > input::placeholder{
+    font-family: 'Raleway';
+}
+
+form > button{
+    width: calc(20% - 5px);
+    padding: 5px;
+    margin-left: 5px;
+    font-family: 'Raleway';
+}
