@@ -1,0 +1,18 @@
+[
+    {
+        "task": "Fare la spesa",
+        "done": true
+    }, {
+        "task": "Lavare la macchina",
+        "done": true
+    }, {
+        "task": "Comprare detersivo",
+        "done": false
+    }, {
+        "task": "Comprare biglietti concerti",
+        "done": false
+    }, {
+        "task": "Prenotare hotel Napoli e Roma",
+        "done": false
+    }
+]

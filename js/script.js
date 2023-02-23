@@ -2,7 +2,6 @@ const {createApp} = Vue;
 createApp({
     data(){
         return{
-            message: 'My todolist app!',
             urlApi: './api.php',
             tasksList: []
         }

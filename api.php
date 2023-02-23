@@ -1,9 +1,6 @@
 <?php
-// header("Access-Control-Allow-Origin: http://127.0.0.1:5173");
-// header("Access-Control-Allow-Headers: X-Requested-With");
-
-    // recupero il mio file json
-    $tasksString = file_get_contents('file.json');
+    // recupero il mio file database json
+    $tasksString = file_get_contents('database.json');
 
     // decode per renderlo un array associativo
     $tasks = json_decode($tasksString, true);
