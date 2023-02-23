@@ -14,6 +14,16 @@ createApp({
     methods:{
         createNewTask(){
             console.log(this.newTask)
+            axios.post(this.urlCreate, {
+                task : this.newTask
+            },{
+                headers: {
+                    'Content-Type': 'multipart/form-data'
+                }
+            })
+            .then((response) => {
+
+            })
         }
 
     },
