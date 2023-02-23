@@ -10,9 +10,18 @@
     $tasks[] = $_POST['task'];
 
     $encodedTask = json_encode($tasks);
-    
+
     file_put_contents('database.json', $encodedTask);
-    
+
+    $response = [
+        'success' => true,
+        'message' => 'Ok',
+        'code' => 200,
+        'data' => $encodedTask
+    ];
+
+    $jsonResponse = json_encode($response);
+
     header('Content-Type: application/json');
-    
-    echo json_encode($_POST);
+
+    echo $jsonResponse;

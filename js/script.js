@@ -7,7 +7,7 @@ createApp({
             tasksList: [],
             newTask: {
                 "task": "",
-                "done": false
+                "done":false
             }
         }
     },
@@ -22,7 +22,7 @@ createApp({
                 }
             })
             .then((response) => {
-
+                this.tasksList = response.data.data;
             })
         }
 
