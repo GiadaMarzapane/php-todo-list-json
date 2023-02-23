@@ -78,4 +78,10 @@ form > button{
     padding: 5px;
     margin-left: 5px;
     font-family: 'Raleway';
+    background-color: purple;
+    color: white;
+    font-weight: 700;
+    border: 2px solid purple;
+    border-radius: 3px;
+    cursor: pointer;
 }
