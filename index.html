@@ -29,7 +29,7 @@
                 <div class="container">
                     <ul>
                         <li v-for="element in tasksList">
-                            <span :class="(element.done) ? 'done' : ''">
+                            <span :class="(element.done) ? 'done' : ''" @click="completedTask(element)">
                                 {{element.task}}
                             </span>
                             <div class="delete-task">

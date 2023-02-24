@@ -25,8 +25,10 @@ createApp({
                 this.tasksList = response.data.data;
             })
             this.newTask.task = '';
+        },
+        completedTask(singleTask){
+            singleTask.done = !singleTask.done
         }
-
     },
     created(){
         axios.get(this.urlApi)
