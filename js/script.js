@@ -24,6 +24,7 @@ createApp({
             .then((response) => {
                 this.tasksList = response.data.data;
             })
+            this.newTask.task = '';
         }
 
     },

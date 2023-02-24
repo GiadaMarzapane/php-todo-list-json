@@ -1,4 +1,3 @@
-<!-- creato file php per post api -->
 <?php
     // recupero il mio file database json
     $tasksString = file_get_contents('database.json');
@@ -7,7 +6,10 @@
     $tasks = json_decode($tasksString, true);
 
     // pusho la nuova task nell'array del database
-    $tasks[] = $_POST['task'];
+    $tasks[] = [
+        'task' => $_POST['task']['task'],
+        'done' => $_POST['task']['done'] == 'false' ? false : true
+    ];
 
     $encodedTask = json_encode($tasks);
 
@@ -17,7 +19,7 @@
         'success' => true,
         'message' => 'Ok',
         'code' => 200,
-        'data' => $encodedTask
+        'data' => $tasks
     ];
 
     $jsonResponse = json_encode($response);
